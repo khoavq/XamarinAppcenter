@@ -19,15 +19,21 @@ namespace HelloWorld
         void Button_Clicked(object sender, EventArgs e)
         {
             greetingLabel.Text = "Welcome " + nameEntry.Text + "!!! It is good to have you.";
-            
+
         }
 
         void Button_Crash_Clicked(object sender, EventArgs e)
         {
-            var crashInt = int.Parse(nameEntry.Text);
-            greetingLabel.Text = crashInt.ToString();
+            try
+            {
+                var crashInt = int.Parse(nameEntry.Text);
+            }
+            catch (Exception exception)
+            {
+                Crashes.TrackError(exception);
+            }
         }
 
-        
+
     }
 }
