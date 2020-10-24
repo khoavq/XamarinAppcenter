@@ -17,7 +17,7 @@ namespace HelloWorld
 
         void Button_Clicked(object sender, EventArgs e)
         {
-            greetingLabel.Text = "Welcome " + nameEntry.Text + "!!!";
+            greetingLabel.Text = "Welcome " + nameEntry.Text + "!!! It is good to have you.";
         }
     }
 }
