@@ -4,8 +4,10 @@
              x:Class="HelloWorld.MainPage">
 
     <StackLayout VerticalOptions="Center">
-    <Label x:Name="greetingLabel" Text="Welcome to Xamarin.Forms!" VerticalOptions="Center" HorizontalOptions="Center"/>
-    <Entry x:Name="nameEntry" Placeholder="Write your name"/>
-    <Button Text="Say hello!" Clicked="Button_Clicked"/>
+        <Label x:Name="greetingLabel" Text="Welcome to Xamarin.Forms!" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Entry x:Name="nameEntry" Placeholder="Write your name"/>
+        <Button Text="Say hello!" Clicked="Button_Clicked"/>
+        <Button Text="Test Crash" Clicked="Button_Crash_Clicked"/>
+
     </StackLayout>
 </ContentPage>
