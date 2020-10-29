@@ -24,14 +24,15 @@ namespace HelloWorld
 
         void Button_Crash_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-                var crashInt = int.Parse(nameEntry.Text);
-            }
-            catch (Exception exception)
-            {
-                Crashes.TrackError(exception);
-            }
+            var crashInt = int.Parse(nameEntry.Text);
+            //try
+            //{
+            //    Crashes.GenerateTestCrash();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Crashes.TrackError(ex);
+            //}
         }
 
 

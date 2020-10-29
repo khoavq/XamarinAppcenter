@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 namespace HelloWorld
 {
@@ -18,9 +19,10 @@ namespace HelloWorld
 
         protected override void OnStart()
         {
-            AppCenter.Start("android=52521cf643bb5068bea9684ece5ba086d91f2b27;" +
-                  "ios=7c51ec670123e23f6577a8d8205852bedaab0494",
-                  typeof(Analytics), typeof(Crashes));
+            AppCenter.LogLevel = LogLevel.Verbose;
+            AppCenter.Start("android=c1f853cb-50c9-435d-a140-c8a31af6b3a3;" +
+                  "ios=14f2f637-0901-445c-a7f1-e5ab8922c616",
+                  typeof(Analytics), typeof(Crashes), typeof(Distribute));
         }
 
         protected override void OnSleep()
